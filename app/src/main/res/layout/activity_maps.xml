@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/detail_backchecking_coordinator"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:layout_gravity="bottom">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <fragment
+            android:id="@+id/activity_maps_maps"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            tools:context=".activity.MapsActivity"
+            android:layout_height="match_parent"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_maps_picker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|left"
+            android:layout_margin="16dp"
+            android:background="@color/orange"
+            android:src="@android:drawable/ic_dialog_map"
+            app:elevation="4dp"/>
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:gravity="bottom">
+
+        <android.support.design.widget.CoordinatorLayout
+            android:id="@+id/coordinator_backcheck"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v4.widget.NestedScrollView
+                android:id="@+id/nested_backcheck"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:behavior_peekHeight="170dp"
+                app:layout_behavior="@string/bottom_sheet_behavior">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <include layout="@layout/bottom_sheet_detail_location"
+                        android:id="@+id/bottom_sheet_detail1"/>
+                    <include layout="@layout/fragment_bottom_sheet"
+                        android:id="@+id/bottom_sheet_detail2"/>
+                </LinearLayout>
+            </android.support.v4.widget.NestedScrollView>
+        </android.support.design.widget.CoordinatorLayout>
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

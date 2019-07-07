@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">SigapBencana</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="lorem">Lorem ipsum dolor sit amet, sint iriure an usu, quot inani facilisis te vix, mei no meis postea cetero. Et vide natum nominati eam, sed ne nonumy dictas maluisset. Mea at perpetua honestatis vituperatoribus, etiam meliore no per. Tantas graeco splendide est et, quem disputando complectitur has ut, at quo vocibus phaedrum accusamus. Qui id mnesarchum instructior, sea saperet detraxit consequuntur ne. Ad cum numquam veritus, no legere iriure est.
+Debet delectus mel ex, has ex aeterno facilisis. Est ut posse ludus signiferumque, et usu illud hendrerit tincidunt. Eum pertinax imperdiet ex. Eu per meis tollit decore, ei minim atomorum usu. Eu his unum placerat accusata, no cum modus nostrum.</string>
+    <string name="lorem_short">Lorem ipsum dolor sit amet, sint iriure an usu, quot inani facilisis te vix, mei no meis postea cetero.</string>
+
+    <string name="some_error">Some Error Occurred!</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="imageberita">
+        <item>http://2.bp.blogspot.com/-RLRDP3_tWoM/UtM9yfDvf5I/AAAAAAAAAJo/FlAg4cgNEmk/s1600/Foto+Banjir+Jakarta+13+Januari+2014.jpg</item>
+        <item>https://statik.tempo.co/data/2017/10/12/id_654686/654686_720.jpg</item>
+        <item>https://static01.nyt.com/newsgraphics/2018/10/02/tsunami-warning/7cce31ab0dbd07d613a6ed8054879e0b88d69297/wani.jpg</item>
+        <item>https://img.okezone.com/content/2016/09/27/56/1499767/beberapa-fakta-menarik-seputar-gunung-berapi-CBbWr1XcDD.jpg</item>
+        <item>http://cdn2.tstatic.net/bali/foto/bank/images/gempa-palu_20181017_143224.jpg</item>
+        <item>https://static.breakingnews.co.id/82787/conversions/maxres/peringatan-bmkg-potensi-angin-kencang-di-seluruh-indonesia.jpg</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:background="@color/blue_grey_light"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.card.MaterialCardView
+            android:id="@+id/cv_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="20dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cv_ponsel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="3dp"
+                    app:cardBackgroundColor="@color/blue_black_light">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:padding="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_weight="1"
+                                android:src="@drawable/placeholder" />
+
+                            <TextView
+                                android:id="@+id/tv_nama_user"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="4"
+                                android:gravity="end"
+                                android:text="-"
+                                android:textColor="@color/colorLight"
+                                android:textAlignment="textEnd"
+                                android:textSize="15dp" />
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cv_info_pengguna"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/cv_ponsel"
+                    app:cardBackgroundColor="@color/blue_grey_light">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textAlignment="center"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                android:text="Kategori Bencana"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <LinearLayout
+                    android:id="@+id/cv_menu_satu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/cv_info_pengguna">
+
+                        <LinearLayout
+                            android:id="@+id/line_info_kategori_bencana"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:padding="10dp"
+                            android:background="@color/colorLight"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:paddingVertical="5dp">
+
+                                <LinearLayout
+                                    android:id="@+id/line_kategori_banjir"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginHorizontal="10dp"
+                                    android:layout_weight="3"
+                                    android:orientation="vertical">
+
+                                    <android.support.v7.widget.CardView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginHorizontal="5dp"
+                                        app:cardBackgroundColor="#aeaeae"
+                                        app:cardCornerRadius="10dp">
+
+                                        <ImageView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="70dp"
+                                            app:srcCompat="@drawable/ic_flood" />
+                                    </android.support.v7.widget.CardView>
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="5dp"
+                                        android:text="Banjir"
+                                        android:textAlignment="center"
+                                        android:textSize="18sp"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/line_kategori_kebakaran"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginHorizontal="10dp"
+                                    android:layout_weight="3"
+                                    android:orientation="vertical">
+
+                                    <android.support.v7.widget.CardView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginHorizontal="5dp"
+                                        app:cardBackgroundColor="#aeaeae"
+                                        app:cardCornerRadius="10dp">
+
+                                        <ImageView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="70dp"
+                                            app:srcCompat="@drawable/ic_fire" />
+                                    </android.support.v7.widget.CardView>
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="5dp"
+                                        android:text="Kebakaran"
+                                        android:textAlignment="center"
+                                        android:textSize="18sp"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/line_kategori_tsunami"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginHorizontal="10dp"
+                                    android:layout_weight="3"
+                                    android:orientation="vertical">
+
+                                    <android.support.v7.widget.CardView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginHorizontal="5dp"
+                                        app:cardBackgroundColor="#aeaeae"
+                                        app:cardCornerRadius="10dp">
+
+                                        <ImageView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="70dp"
+                                            app:srcCompat="@drawable/ic_tsunami" />
+                                    </android.support.v7.widget.CardView>
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="5dp"
+                                        android:text="Tsunami"
+                                        android:textAlignment="center"
+                                        android:textSize="18sp"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:paddingVertical="5dp">
+
+                                <LinearLayout
+                                    android:id="@+id/line_kategori_gunung_meletus"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginHorizontal="10dp"
+                                    android:layout_weight="3"
+                                    android:orientation="vertical">
+
+                                    <android.support.v7.widget.CardView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginHorizontal="5dp"
+                                        app:cardBackgroundColor="#aeaeae"
+                                        app:cardCornerRadius="10dp">
+
+                                        <ImageView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="70dp"
+                                            app:srcCompat="@drawable/ic_volcano" />
+                                    </android.support.v7.widget.CardView>
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="5dp"
+                                        android:text="Gunung Meletus"
+                                        android:textAlignment="center"
+                                        android:textSize="18sp"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/line_kategori_gempa_bumi"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginHorizontal="10dp"
+                                    android:layout_weight="3"
+                                    android:orientation="vertical">
+
+                                    <android.support.v7.widget.CardView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginHorizontal="5dp"
+                                        app:cardBackgroundColor="#aeaeae"
+                                        app:cardCornerRadius="10dp">
+
+                                        <ImageView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="70dp"
+                                            app:srcCompat="@drawable/ic_earthquake" />
+                                    </android.support.v7.widget.CardView>
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="5dp"
+                                        android:text="Gempa Bumi"
+                                        android:textAlignment="center"
+                                        android:textSize="18sp"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/line_kategori_angin_kencang"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginHorizontal="10dp"
+                                    android:layout_weight="3"
+                                    android:orientation="vertical">
+
+                                    <android.support.v7.widget.CardView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginHorizontal="5dp"
+                                        app:cardBackgroundColor="#aeaeae"
+                                        app:cardCornerRadius="10dp">
+
+                                        <ImageView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="70dp"
+                                            app:srcCompat="@drawable/ic_wind" />
+                                    </android.support.v7.widget.CardView>
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="5dp"
+                                        android:text="Angin Kencang"
+                                        android:textAlignment="center"
+                                        android:textSize="18sp"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </android.support.design.card.MaterialCardView>
+        <android.support.design.card.MaterialCardView
+            android:id="@+id/cv_dua_menu"
+            android:layout_below="@id/cv_info"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="350dp">
+
+            <LinearLayout
+                android:layout_below="@+id/line_info_kategori_bencana"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <TextView
+                    android:id="@+id/tv_informasi_terbaru"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:text="Sigap News"
+                    android:layout_marginBottom="5dp"/>
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rv_berita_home_activity"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"/>
+            </LinearLayout>
+        </android.support.design.card.MaterialCardView>
+    </RelativeLayout>
+</android.support.v4.widget.NestedScrollView>

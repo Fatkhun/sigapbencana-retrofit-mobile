@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="5dp"
+        app:cardBackgroundColor="#cfcfcf">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/ic_flood"
+                android:padding="3dp"/>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <View
+            android:id="@+id/tv_judul_item_berita"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="@color/blue_grey_light"
+            android:textStyle="bold"
+            android:textSize="22sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:text="Tidak ada data"/>
+    </LinearLayout>
+</LinearLayout>
